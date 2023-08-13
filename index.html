@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Etch-a-Sketch</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="header">
+        <h2 class="etch">Etch-a-Sketch</h2>
+    </div>
+
+    <div class="mid">
+        <div class="container">
+            <div class="left">
+                <div class="menubar">
+                    <button class="btn" id="blackBtn">Black</button>
+                    <button class="btn" id="randomBtn">Random</button>
+                    <button class="btn" id="eraserBtn">Eraser</button>
+                    <button class="btn" id="newBtn">New</button>
+                    <div class="slider-bar-container">
+                        <input type="range" min="10" max="100" value="16" id="slider" class="slider-bar">
+                        <div class="slider-value" id="slider-value">Grid Size: 16</div>
+                    </div>
+                        <button class="color-picker" id="color-picker"> 
+                            <p class="color-picker-text">Color Picker</p>
+                            <div class="picked-color-box" id="picked-color-box"></div>
+                        </button>
+                        <button class="color-picker" id="bg-color-picker"> 
+                            <p class="color-picker-text">Background Color</p>
+                            <div class="picked-color-box" id="bg-picked-color-box"></div>
+                        </button>
+                </div>
+            </div>
+        
+            <div class="right">
+                <div class="grid-container" id="grid-container">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <p class="madeby">made by Silverbird451</p>
+    </div>
+
+
+    <script src="sctipt.js"></script>
+</body>
+
+</html>
